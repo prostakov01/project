@@ -1,0 +1,34 @@
+//@import 'libs/bootstrap-reboot.min';
+
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+:root {
+    --main-color:  #ec644b;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'blocks/title';
+@import 'blocks/btn';
+@import 'blocks/promo';
+@import 'blocks/advantages';
+@import 'blocks/ourWork';
+@import 'blocks/divider';
+@import 'blocks/agent';
+
+@import 'blocks/media';

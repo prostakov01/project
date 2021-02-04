@@ -1,0 +1,40 @@
+.btn {
+    position: relative;
+    display: block;
+    width: 160px;
+    height: 45px;
+    background-color: var(--main-color);
+    border-radius: 25px;
+    border: none;
+
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all .3s;
+    &:before {
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 45px;
+        height: 45px;
+        opacity: 0;
+        background: url('../img/boi.png') no-repeat 100%/50%;
+        background-size: 30%;
+        filter: opacity(25%);
+        //background: rgba(255,255,255,0.3);
+        //border-radius: 25px;
+        transition: all .6s ease;
+    }
+    &:hover {
+        font-size: 13px;
+    }
+    &:hover:before {
+        width: 100%;
+        filter: opacity(100%);
+        opacity: 1;
+    }
+}
